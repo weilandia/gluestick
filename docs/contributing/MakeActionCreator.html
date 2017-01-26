@@ -1,0 +1,518 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Make an action creator · Gluestick</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.1">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="HookUpActionCreator.html" />
+    
+    
+    <link rel="prev" href="GenerateСomponentTodos.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                        <b>1.1.</b>
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Readme.html">
+            
+                <a href="../Readme.html">
+            
+                    
+                        <b>1.2.</b>
+                    
+                    Quickstart
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                        <b>1.3.</b>
+                    
+                    Contributing
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="Installation.html">
+            
+                <a href="Installation.html">
+            
+                    
+                        <b>1.3.1.</b>
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="CreatingNewApp.html">
+            
+                <a href="CreatingNewApp.html">
+            
+                    
+                        <b>1.3.2.</b>
+                    
+                    Creating a new application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="RunningApp.html">
+            
+                <a href="RunningApp.html">
+            
+                    
+                        <b>1.3.3.</b>
+                    
+                    Running your application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="HotModuleReplacement.html">
+            
+                <a href="HotModuleReplacement.html">
+            
+                    
+                        <b>1.3.4.</b>
+                    
+                    Hot Module Replacement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="GeneratingContainer.html">
+            
+                <a href="GeneratingContainer.html">
+            
+                    
+                        <b>1.3.5.</b>
+                    
+                    Generating a Container
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="GeneratingComponent.html">
+            
+                <a href="GeneratingComponent.html">
+            
+                    
+                        <b>1.3.6.</b>
+                    
+                    Generating a Component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="GeneratingReducer.html">
+            
+                <a href="GeneratingReducer.html">
+            
+                    
+                        <b>1.3.7.</b>
+                    
+                    Generating a Reducer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="HookingUpData.html">
+            
+                <a href="HookingUpData.html">
+            
+                    
+                        <b>1.3.8.</b>
+                    
+                    Hooking up your data
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="TurnOffJavaScript.html">
+            
+                <a href="TurnOffJavaScript.html">
+            
+                    
+                        <b>1.3.9.</b>
+                    
+                    Turn off JavaScript
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="GenerateСomponentTodos.html">
+            
+                <a href="GenerateСomponentTodos.html">
+            
+                    
+                        <b>1.3.10.</b>
+                    
+                    Generate a component for adding todos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.11" data-path="MakeActionCreator.html">
+            
+                <a href="MakeActionCreator.html">
+            
+                    
+                        <b>1.3.11.</b>
+                    
+                    Make an action creator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.12" data-path="HookUpActionCreator.html">
+            
+                <a href="HookUpActionCreator.html">
+            
+                    
+                        <b>1.3.12.</b>
+                    
+                    Hook up your action creator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.13" data-path="AsynchronousActionCreators.html">
+            
+                <a href="AsynchronousActionCreators.html">
+            
+                    
+                        <b>1.3.13.</b>
+                    
+                    Asynchronous action creators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="PrefetchingWithFetchData.html">
+            
+                <a href="PrefetchingWithFetchData.html">
+            
+                    
+                        <b>1.3.14.</b>
+                    
+                    Prefetching data with fetchData
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Make an action creator</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p>The reducer that you just created determines the new state based on an action that is passed to it. These actions are typically simple objects that include a type property and value and will include any additional data the reducer will need to perform the action. An action for creating a new todo might look like this:</p><pre class="language-"><code class="lang-bash"><span class="token punctuation">{</span>
+    type: <span class="token string">&quot;ADD_TODO&quot;</span>,
+    text: <span class="token string">&quot;Write getting started guide&quot;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>Given that typing these objects out every time is inefficient, the typical flow in a Redux application uses &#x201C;action creators.&#x201D; These are very simple functions that return action objects. This will give us a nice place to expose the type as a constant for your reducer, as well. You don&#x2019;t create a generator for action creators because, as you will see, there&#x2019;s nothing to generate.</p><p>Create a new file <code>src/actions/todos.js</code></p><pre class="language-"><code class="lang-bash">
+<span class="token function">export</span> const ADD_TODO <span class="token operator">=</span> <span class="token string">&quot;ADD_TODO&quot;</span><span class="token punctuation">;</span>
+
+<span class="token function">export</span> <span class="token keyword">function</span> addTodo <span class="token punctuation">(</span>text<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span>
+        type: ADD_TODO,
+        text: text 
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>Now tell the reducer what to do with this action. Edit <code>src/reducers/todos.js</code></p><pre class="language-"><code class="lang-bash"><span class="token function">import</span> <span class="token punctuation">{</span> ADD_TODO <span class="token punctuation">}</span> from <span class="token string">&quot;../actions/todos&quot;</span><span class="token punctuation">;</span>
+
+const INITIAL_STATE <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">&quot;First Item&quot;</span>, <span class="token string">&quot;Second Item&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token function">export</span> default <span class="token punctuation">(</span>state<span class="token operator">=</span>INITIAL_STATE, action<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">&gt;</span> <span class="token punctuation">{</span>
+    switch <span class="token punctuation">(</span>action.type<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">case</span> ADD_TODO:
+            <span class="token keyword">return</span> <span class="token punctuation">[</span>action.text, <span class="token punctuation">..</span>.state<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        default:
+            <span class="token keyword">return</span> state<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<p>First, import your ADD_TODO constant at the top. Then, add a special case to a switch statement for actions of that type. Then, create a new array with the todo text and copy over the old array using the ES2015 spread operator. Note: create a new array; don&#x2019;t mutate the old array. This is an important requirement of Redux as their documentation states: &#x201C;For now, just remember that the reducer must be pure. Given the same arguments, it should calculate the next state and return it. No surprises. No side effects. No API calls. No mutations. Just a calculation.&#x201D; (See the Redux documentation on Reducers for more information.)</p>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="GenerateСomponentTodos.html" class="navigation navigation-prev " aria-label="Previous page: Generate a component for adding todos">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="HookUpActionCreator.html" class="navigation navigation-next " aria-label="Next page: Hook up your action creator">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Make an action creator","level":"1.3.11","depth":2,"next":{"title":"Hook up your action creator","level":"1.3.12","depth":2,"path":"docs/contributing/HookUpActionCreator.md","ref":"docs/contributing/HookUpActionCreator.md","articles":[]},"previous":{"title":"Generate a component for adding todos","level":"1.3.10","depth":2,"path":"docs/contributing/GenerateСomponentTodos.md","ref":"docs/contributing/GenerateСomponentTodos.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","prism","-highlight","github","anchorjs"],"styles":{"website":"build/gitbook.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"github":{"url":"https://github.com/TrueCar/gluestick/"},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"label":"Edit This Page","base":"https://github.com/TrueCar/gluestick/tree/master"},"theme-default":{"styles":{"website":"build/gitbook.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true},"anchorjs":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Gluestick","gitbook":">=3.2.1"},"file":{"path":"docs/contributing/MakeActionCreator.md","mtime":"2017-01-26T09:46:17.000Z","type":"markdown"},"gitbook":{"version":"3.2.1","time":"2017-01-26T09:46:53.064Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/3.1.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
