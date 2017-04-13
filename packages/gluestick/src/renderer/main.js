@@ -102,7 +102,7 @@ module.exports = ({ config, logger }: Context) => {
           assets,
           {
             reduxMiddlewares,
-            envVariables: [],
+            envVariables: ['ASSETS_URL'],
             httpClient: applicationConfig.httpClient || {},
             entryWrapperConfig: {},
           },

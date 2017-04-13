@@ -8,7 +8,7 @@ const getAssetsLoader = require('./getAssetsLoader');
 const getAssetPathForFile = (filename: string, section: string, webpackAssets: Object): string => {
   const assets: Object = webpackAssets[section] || {};
   const webpackPath: string = assets[filename];
-  return webpackPath;
+  return `${process.env.ASSETS_URL || ''}${webpackPath}`;
 };
 
 const filterEntryName = (name: string): string => {
