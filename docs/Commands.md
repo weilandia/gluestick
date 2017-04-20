@@ -1,11 +1,11 @@
 # Commands
-GlueStick comes with several commands to help you get started. You can full list of commands available on gluestick below:
+GlueStick comes with several commands to help you get started. You can find a full list of commands available on GlueStick below:
 
 ### `gluestick new`
 
-Takes care of generating new project
+Takes care of generating new projects
 
-If you use `new` command from `gluestick-cli` it will use latest `gluestick` version available on npm
+If you use the `new` command from `gluestick-cli` it will use the latest `gluestick` version available on npm
 
 ```bash
 gluestick new <YOUR_APPLICATION_NAME>
@@ -13,9 +13,9 @@ gluestick new <YOUR_APPLICATION_NAME>
 
 Available options:
 
-* `-d, --dev <path>` - Relative path from inside crated directory to development version of gluestick
-* `-n, --npm` - Use npm instead of yarn for install dependencies
-* `-s, --skip-main` - Gluestick will not generate main app
+* `-d, --dev <path>` - Relative path from inside created directory to development version of GlueStick
+* `-n, --npm` - Use npm instead of yarn for installing dependencies
+* `-s, --skip-main` - GlueStick will not generate main app
 
 ### `gluestick generate`
 
@@ -35,12 +35,12 @@ Available options:
 
 Removes entity created by `generate` command
 
-> `destory` command only removes files, meaning if entity generator modifies already existing file,
+> `destroy` command only removes files, meaning if entity generator modifies already existing file,
 you need to manually update that file, so this command works best with `component` and `container`,
 but for `reducer` generator it will only remove reducer and test for it, so any reference to that reducer in `reducers/index.js` must be removed manually
 
 ```bash
-gluestick destory <ENTITY_TYPE> <ENTITY_NAME>
+gluestick destroy <ENTITY_TYPE> <ENTITY_NAME>
 ```
 
 Available options:
@@ -49,7 +49,7 @@ Available options:
 
 ### `gluestick start`
 
-Starts a gluestick project
+Starts a GlueStick project
 
 > If you want to start your project in production mode, run this command with `NODE_ENV=production`.
 
@@ -57,7 +57,7 @@ Starts a gluestick project
 gluestick start
 ```
 
-Depending on `NODE_ENV` value and presence of `-P`/`--skip-build` flag, `start` command applies different behaviours:
+Depending on the `NODE_ENV` value and presence of `-P`/`--skip-build` flag, `start` command applies different behaviours:
 
 |           `NODE_ENV`          | `-P`/`--skip-build` passed |          client build          | server build |
 |:-----------------------------:|:--------------------------:|:------------------------------:|:------------:|
@@ -152,7 +152,7 @@ gluestick test --watch Home
 
 ### `gluestick reinstall-dev`
 
-Reinstall gluestick dependency project
+Reinstall GlueStick dependency project
 
 ```bash
 gluestick reinstall-dev
@@ -160,7 +160,7 @@ gluestick reinstall-dev
 
 ### `gluestick watch`
 
-Watches and applies changes from gluestick package to current project
+Watches and applies changes from GlueStick package to current project
 
 ```bash
 gluestick watch
@@ -168,13 +168,13 @@ gluestick watch
 
 ### `gluestick reset-hard`
 
-Removes gluestick dependency project clean build, cache and reinstalls dependencies
+Removes GlueStick dependency project clean build, cache and reinstalls dependencies
 
 ```bash
 gluestick reset-hard
 ```
 
-#### Gluestick CLI & Gluestick dependency commands
+#### GlueStick CLI & GlueStick dependency commands
 
 You can check which commands are being called by `gluestick` and `gluestick-cli` here:
 
@@ -182,7 +182,7 @@ You can check which commands are being called by `gluestick` and `gluestick-cli`
 * [gluestick](../packages/gluestick/README.md)
 
 ## Environment variables
-To pass enviroment variables when running command simply, add them at the beginning:
+To pass environment variables when running command simply, add them at the beginning:
 ```
 ENV_VAR_NAME=env_var_value gluestick <command>
 ```
